@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="{% static 'css/style.css '%}">
+</head>
+<body>
+    <div id="main">
+        <h1>Products</h1>
+        <div id="box">
+            <div id="eletronics" class="product" >
+                <ul>
+                    <a href="eletronics/"><h2>Eletronics</h2></a>
+                </ul>
+            </div>
+            <div id="toys" class="product">
+                <ul>
+                    <a href="toys/"><h2>Toys</h2></a>
+                </ul>
+            </div>
+            <div id="shoes" class="product">
+                <ul>
+                    <a href="shoes/"><h2>Shoes</h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

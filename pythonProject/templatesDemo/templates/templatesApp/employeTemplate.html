@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employes</title>
+    <link rel="stylesheet" href="{% static "css/emp.css "%}">
+</head>
+<body>
+    <div id="main">
+        <h1>EMPLOYEE LIST</h1>
+        <ol>
+            <div><h2>
+                Id : {{id}}
+            </h2></div>
+            <div><h2>
+                Name : {{name}}
+            </h2></div>
+            <div><h2>
+                Salary : {{salary}}
+            </h2></div>
+        </ol>
+        <div>
+            <div id="image">
+                <img src="{% static "images/picture.jpg "%}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

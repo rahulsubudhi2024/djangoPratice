@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%; 
+    background-color: aqua;
+}
+
+#image img{
+    width: 20%;
+    height: 70%;
+    object-fit: cover;
+}
