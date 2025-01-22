@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Form</title>
-    <link rel="stylesheet" href="{% static "css/clinicals.css "%}">
+    <title>Clinical Data Creation</title>
 </head>
 <body>
-    <h2>Create Patient</h2>
+    <h2>Clinical Details :</h2>
+    First Name : {{patient.firstName}}
+    Last Name : {{patient.lastName}}
+    Age : {{patient.age}}
+    <br/>
+    <h2>Patient Clinical Data :</h2>
     <form method="post">
         <table>
             {{form.as_table}}
-            {%csrf_token%}
         </table>
-        <br/>
+        {%csrf_token%}
         <input type="submit" value="Save">
     </form>
 </body>
